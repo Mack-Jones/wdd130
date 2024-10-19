@@ -1,6 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Oswald&display=swap');
+
+
+.home-title{
+font-family: Pacifico, Helvetica, sans-serif;
+font-weight: 100;
+font-size: 2.5em;
+margin-top: 10px;
+}
+
 #content{
     max-width: 1600px;
     margin: 0 auto;
+    font-family: Oswald, Arial, sans-serif;
+font-size: 1.2em;
+}
+
+h2 {
+    margin: 0;
 }
 
 nav a{text-align:center;}
@@ -10,18 +26,26 @@ main section{text-align:center;}
 #background {
     height: 725px;
 }
-body{background-color:aliceblue;}
+body{background-color:aliceblue; 
+    margin: 0;
+    padding: 0;}
 header{background-color:#ffdd39ff;}
 nav a:hover{background-color: #ff8a1aff;}
-.book, .join{background-color:#1155ccff;}
+.book, .join{background-color:#1155ccff;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;}
 .book:hover, .join:hover{background-color:#8adcedff;}
 #background{background-color: #8adcedff;}
-.msg{background-color: #1155ccff;}
+.msg{background-color: #1155ccff;
+    line-height: 1.5em;
+    padding: 35px;}
 footer{background-color: #1155ccff;}
 
 nav a{background-color:#ffdd39ff;
 text-decoration: none;
-text-align: center;}
+text-align: center;
+padding: 35px;}
 nav a:hover{background-color: #ff8a1aff;}
 .home-title{background-color:#ffdd39ff;}
 h4{background-color: #1155ccff;}
@@ -30,8 +54,11 @@ h4{background-color: #1155ccff;}
     text-align: center;}
 .book:hover, .join:hover{background-color:#ffdd39ff;}
 .msg h2{background-color: #8adcedff;}
-.msg p{background-color: #8adcedff;}
-footer{background-color: #1155ccff;}
+.msg p{background-color: #8adcedff;
+    padding-bottom: 15px;}
+footer{background-color: #1155ccff;
+    padding: 25px 50px;
+    margin-top: 200px;}
 footer a{background-color: #8adcedff;
     text-decoration: none;
     text-align: center;}
@@ -39,6 +66,7 @@ footer a:hover{background-color:#ffdd39ff;}
 
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
 
 #hero-img {
@@ -52,3 +80,21 @@ footer p {
 footer p a:hover {
     text-decoration: underline;
 }    
+
+
+#logo_link  {padding-top: 5px;
+} 
+footer .social img{ padding-top: 15px;}
+.rivers-card, .camping-card, .rapids-card{  margin: 200px 0;}
+.card-img {
+    border: 10px solid #d9c2a3;
+}
+
+main section img {
+    box-sizing: border-box;
+}
+
+.logo{
+    width:10vw;
+    margin:0px 0px 35px 0px;
+    }
