@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Oswald&display=swap');
+#content{
+    max-width: 1600px;
+    margin: 0 auto;
+    font-family: Oswald, Arial, sans-serif;
+font-size: 1.2em;
+}
+
+
+
+header {
+    display: grid;
+    grid-template-columns: 150px auto;
+    height: 97px;
+    width: auto;
+    background-color:#ffdd39ff;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    height: 97px;
+    color: #1155ccff;
+}
+
+#logo_link {
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+
+footer {
+    padding: 25px 50px;
+    margin-top: 200px; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1155ccff;
+    text-align: center;
+    text-decoration: none;
+    font-family: Oswald;
+}
+
+
+
+.button-box{text-align:center;}
+
+#background {
+    height: 725px;
+}
+
+nav a:hover{background-color: #ff8a1aff;}
+
+
+nav a{background-color:#ffdd39ff;
+text-decoration: none;
+text-align: center;
+color: #1155ccff;
+padding: 35px;
+box-sizing: border-box;
+}
+
+.icon {
+    width: 80px;
+    padding-top: 10px;
+}
+
+
+footer p {
+    font-size: 1.25em;
+}    
+
+
+
+#logo_link  {padding-top: 5px;
+} 
+footer .social img{ padding-top: 15px;}
+
+.logo{
+    width:10vw;
+    margin:0px 0px 35px 0px;
+    }
+
+
+.TitleText{
+    margin: auto;
+    width: 95%;
+    background-color: red;
+    height: 20%;
+    text-align: center;
+    font-family: Pacifico;
+    font-size: 2em;
+    letter-spacing: 0.2em;
+}
