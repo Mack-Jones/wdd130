@@ -30,6 +30,16 @@ Fonts are separated by a | */
 
 /*  Look around below...but DON'T CHANGE ANYTHING! */
 
+.Wireframes{
+  width:50%;
+  margin: auto;
+  text-align: center;
+}
+
+.WireframeIMG{
+  width:100%;
+}
+
 body {
   max-width: 1200px;
   margin: 0 auto;
