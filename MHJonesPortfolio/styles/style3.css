@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Rubik+Mono+One&display=swap');
+
+body{
+    background-image: url(backgroundimage.jpeg);
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+
+  .closebtn:hover{
+    font-weight: 1000;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+   
+    margin-left: 50px;
+  }
+  
+  .closebtn{
+    font-size: 36px;
+    color:#ffa400ff;
+    text-decoration: none;
+  }
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+
+header{
+
+  
+     background-image: linear-gradient(to right, #41434bff, rgb(0, 0, 0));
+     height: 64px;
+     width: 100vw;
+     position: fixed;
+     margin-left: -0.5vw;
+     margin-top: -100px;
+     box-sizing: border-box;
+     padding-left: 16px;
+     padding-top: 13px;
+     box-shadow: 0px 0px 20px #000000;
+  }
+
+.navitem:hover{
+    color: #111;
+    background-color: #ffa400ff;
+}
+
+.navitem{
+    font-family: Rubik Mono One;
+    font-size: 20px;
+    color: #ffa400ff;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    display: block;
+    transition: 0.3s;
+}
+
+.MenuOpen{
+    height: 37px;
+    width: 35px;
+    margin-bottom: 14px;
+    cursor: pointer;
+}
+
+.MenuOpen:hover{
+    height: 40px;
+    width: 40px;
+}
+
+.TitlePart{
+    font-family: Rubik Mono One;
+    color: #ffa400ff;
+    margin-left: 115px;
+    margin-top: -55px;
+}
+
+.TitlePart2{
+    font-family: Rajdhani;
+    color: #ffa400ff;
+    margin-left: 458px;
+    margin-top: -128px;
+}
+
+.TitlePart3{
+    font-family: Rajdhani;
+    color: #ffa400ff;
+    margin-left: 693px;
+    margin-top: -129px;
+    font-weight: 100;
+}
+
+.break{
+    font-family: Rajdhani;
+    font-weight: 100;
+    margin-left: 414px;
+    margin-top: -79px;
+    font-size: 4em;
+    color: #ffa400ff;
+}
+
+
+.break2{
+    font-family: Rajdhani;
+    font-weight: 100;
+    margin-left: 645px;
+    margin-top: -78px;
+    font-size: 4em;
+    color: #ffa400ff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Hero{
+margin-top: 100px;
+margin-left: 2%;
+width: 96%;
+grid-template-columns: 600px 20px 1fr;
+height: 440px;
+display: grid;
+background-color:#41434bff;
+box-shadow: 0px 0px 20px #000000;
+}
+
+.HeroImgHolder{
+  background-image: url(CarPoster.png);
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  grid-column: 1;
+  
+}
+
+.HeroText{
+  padding: 20px;
+  grid-column: 3;
+}
+
+.HeroText h1{
+  font-family: Rubik Mono One;
+  color: #ffa400ff;
+  font-size: 3em;
+}
+.HeroText p{
+  font-family: rajdhani;
+ color: #ffa400ff;
+ font-size: 2em;
+}
+
+
+.Info{
+margin-top: 100px;
+margin-left: 2%;
+width: 96%;
+grid-template-columns: 1fr 20px 425px;
+height: 300px;
+display: grid;
+background-color:#ffa400ff;
+box-shadow: 0px 0px 20px #000000;
+padding: 20px;
+box-sizing: border-box;
+}
+
+
+.InfoText{
+  margin-top: 10px;
+  grid-column: 1;
+  height: 100%;
+  width: 100%;
+  grid-row: 1;
+}
+
+
+.InfoText h1{
+  font-family: Rubik Mono One;
+  color:#41434bff;
+  font-size: 3em;
+}
+.InfoText p{
+  font-family: rajdhani;
+ color: #41434bff;
+ font-size: 2em;
+}
+
+.InfoHolder{
+  background-image: url(CarForest.png);
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  grid-column: 3;
+}
+
+
+
+
+.ProjectCarousel{
+  margin-top: 100px;
+  margin-left: 2%;
+  width: 96%;
+  grid-template-columns: 500px 20px 1fr;
+  height: 460px;
+  display: grid;
+  background-color:#41434bff;
+  box-shadow: 0px 0px 20px #000000;
+  padding: 20px;
+  box-sizing: border-box;
+  }
+
+
+
+  .CarouselHolder{
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .CarouselText{
+    grid-column: 3;
+    grid-row: 1;
+  }
+  
+  .CarouselText h1{
+    font-family: Rubik Mono One;
+    color: #ffa400ff;
+    font-size: 3em;
+  }
+  .CarouselText p{
+    font-family: rajdhani;
+   color: #ffa400ff;
+   font-size: 2em;
+  }
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  max-height: 380px;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+footer{
+
+  
+  background-image: linear-gradient(to right, #41434bff, rgb(0, 0, 0));
+  height: 64px;
+  width: 99vw;
+  margin-left: -0.5vw;
+  margin-top: 90px;
+  margin-bottom: -20px;
+  box-sizing: border-box;
+  padding-left: 16px;
+  padding-top: 13px;
+  box-shadow: 0px 0px 20px #000000;
+  grid-template-columns: 1fr 1fr 1fr;
+  display: grid;
+  padding-right: 120px;
+  padding-top: 0px;
+}
+
+footer a{
+  padding-top: 15px;
+  text-align: center;
+  text-decoration: none;
+  font-family: Rubik Mono One;
+  color: #ffa400ff;
+  box-sizing: border-box;
+}
+
+footer a:hover{
+  background-color: #ffa400ff;
+  color: #41434bff;
+}

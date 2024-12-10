@@ -4,48 +4,116 @@
     <link type="text/css" rel="stylesheet" href="styles/style.css">
 
 
-<body>
-
+    <script>
+        /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+          document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
+        
+        /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft = "0";
+          document.body.style.backgroundColor = "white";
+        }
+    
+    
+        let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+    
+    <body>
     <header>
-        <nav class="navigation">
-            <div class="navContainer" id="Nav1">
-            <a href="#" class="NavItem"><p>Home</p></a>
-            </div>
-            <div class="navContainer" id="Nav2">
-            <a href="#" class="NavItem"> <p>About Me Page</p></a>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html" class="navitem">Home</a>
+            <a href="Academic and Professional Projects.html" class="navitem">Academic and Professional Projects</a>
+            <a href="Personal Projects.html" class="navitem">Personal Projects</a>
         </div>
-            <div class="navContainer" id="Nav2">
-            <a href="#" class="NavItem"> <p>My Projects</p></a>
-        </div>
-            <div class="navContainer" id="Nav2">
-            <a href="#" class="NavItem"></a>
-        </div>
-        </nav>
+          
+          <!-- Use any element to open the sidenav -->
+          <span onclick="openNav()"> <img src="styles/Hamburger_icon.svg - Copy.png" class="MenuOpen"> </span>  
+          <h1 class="TitlePart"> Mack Jones</h1><p class="break"> - </p> <h1 class="TitlePart2">My Portfolio</h1><p class="break2"> - </p> <h1 class="TitlePart3">Portfolio Home</h1>
     </header>
+    
+
+
+
+
+
     <div class="Hero">
         <img class="HeroImg" src="images/Screenshot 2024-11-09 214900.png" alt="SpaceshipRender">
         <h1>My Portfolio</h1>
     </div>
     <div class="Textbox1">
-        <h2>Lorem Ipsum</h2>
-        <p>Lorem ipsum dolor sit amet, 
-            consectetur adipiscing elit, sed do eiusmod tempor
-             incididunt ut labore et dolore magna aliqua. Ut enim ad
-              minim veniam, quis nostrud exercitation ullamco laboris 
-              nisi ut aliquip ex ea commodo consequat. </p>
-    </div>
-    <div class="Textbox2">
-        <h2>Lorem Ipsum</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
-            do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
-              pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
-              culpa qui officia deserunt mollit anim id est laborum.
+        <h1>Welcome To My Portfolio</h1>
+        <p>Featured here is a number of my projects as well as information on my journey as an aritst. The primary focus of my work is on
+            3D and graphic design. I have been able to gain experiences in highschool, in my first semester of college, and in professional
+            contexts. This portfolio features projects from each of these experiences, with the goal of demonstrating my versatility as a
+            designer.
         </p>
-
     </div>
+
+    <div class="Info">
+        <div class="InfoHolder">
+        </div>
+        <div class="InfoText">
+            <h1>
+                About Me
+            </h1>
+            <p>
+                I'm Mack Jones. Though I've grown up in Connecticut, I have deep roots in the west. 
+                My father grew up in Montana and Idaho, and my mother in Utah. Both my parents attended 
+                BYU-Provo, which has been a major inspiration to me in choosing to follow the BYU path. 
+                My father has also always had an interest in creating art, which sparked my interest in 
+                developing artistic talents from a young age. I've taught myself to sketch, use Photoshop,
+                 Illustrator, and Blender (an open-source 3D modelling and rendering program). I've also
+                  committed to taking multiple graphic design courses at Staples, my former high school,
+                   and plan to take more in college. Part of my artistic passion has been perpetuated by
+                    my interest in cars and automotive design. I often sketch and 3D model my own car designs, 
+                    and have been doing so for several years. My interest in automotive also has impacted my 
+                    pursuit of graphic design, as some of my pieces pertain to cars. I have come to BYU-Idaho
+                     to start the process of turning these interests into a professional career, while solidifying
+                      faith-based virtues that will help ensure my success in life. I am excited to pursue the arts 
+                      at BYU-Idaho and cannot wait to discover the opportunities and connections had here.
+            </p>
+        </div>
+        </div>
+
+
+        <footer>
+            <a href="index.html">Home</a>
+            <a href="Academic and Professional Projects.html">Academic and Professional Projects</a>
+            <a href="Personal Projects.html">Personal Projects</a>
+        </footer>
 </body>
 
 </html>
