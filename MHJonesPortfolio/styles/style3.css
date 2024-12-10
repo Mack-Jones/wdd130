@@ -58,7 +58,7 @@ body{
 
 header{
 
-  
+     z-index: 5;
      background-image: linear-gradient(to right, #41434bff, rgb(0, 0, 0));
      height: 64px;
      width: 100vw;
