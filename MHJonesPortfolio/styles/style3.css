@@ -93,10 +93,7 @@ header{
     cursor: pointer;
 }
 
-.MenuOpen:hover{
-    height: 40px;
-    width: 40px;
-}
+
 
 .TitlePart{
     font-family: Rubik Mono One;

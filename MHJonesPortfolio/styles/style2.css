@@ -94,11 +94,6 @@ header{
     cursor: pointer;
 }
 
-.MenuOpen:hover{
-    height: 40px;
-    width: 40px;
-}
-
 .TitlePart{
     font-family: Rubik Mono One;
     color: #ffa400ff;
@@ -228,7 +223,7 @@ box-sizing: border-box;
 }
 
 .InfoHolder{
-  background-image: url(Chris\ Poster.png);
+  background-image: url(ChrisPoster.png);
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
