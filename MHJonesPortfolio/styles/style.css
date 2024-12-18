@@ -194,13 +194,20 @@ header{
     
     .InfoText h1{
       font-family: Rubik Mono One;
-      color:#41434bff;
+      background-color:#41434bff;
+      color: #ffa400ff;
       font-size: 3em;
+      margin-left: -20px;
+      padding-left: 20px;
+      box-sizing: border-box;
+      width: 94vw;
+      margin-right: -370px;
     }
     .InfoText p{
       font-family: rajdhani;
      color: #41434bff;
      font-size: 1.25em;
+     text-align: justify;
     }
     
     .InfoHolder{
@@ -211,6 +218,8 @@ header{
       height: 100%;
       width: 100%;
       grid-column: 3;
+      position: relative;
+      z-index: 2;
     }
 
 
@@ -237,6 +246,7 @@ header{
             font-family: rajdhani;
            color: #ffa400ff;
            font-size: 2em;
+           text-align: justify;
           }
 
 
